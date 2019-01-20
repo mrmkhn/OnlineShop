@@ -33,7 +33,7 @@
         <th>file</th>
 
     </tr>
-   @foreach($data as $post)
+    @foreach($t as $post)
 
         <tr>
             <td> {{ $post->name }} </td>
@@ -45,10 +45,34 @@
 
         </tr>
     @endforeach
+
+
+
 </table>
     </div>
 
+
+
+
+
+
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
