@@ -33,7 +33,7 @@
         <th>file</th>
 
     </tr>
-    @foreach($t as $row)
+    @foreach($data as $row)
 
         <tr>
 
@@ -48,15 +48,8 @@
         </tr>
     @endforeach
 
-
-
 </table>
     </div>
-
-
-
-
-
 
 </div>
 
