@@ -30,7 +30,7 @@
         <th>price</th>
         <th>count</th>
         <th>description</th>
-        <th><file></file></th>
+        <th>file</th>
 
     </tr>
     @foreach($t as $row)
