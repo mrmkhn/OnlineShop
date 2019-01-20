@@ -33,21 +33,18 @@
         <th>file</th>
 
     </tr>
-    @foreach($data as $row)
+   @foreach($t as $post)
 
         <tr>
-
-            <td>{{$row['name']}}</td>
-            <td>{{$row['type']}}</td>
-            <td>{{$row['price']}}</td>
-            <td>{{$row['count']}}</td>
-            <td>{{$row['description']}}</td>
-            <td>{{$row['file']}}</td>
-
+            <td> {{ $post->name }} </td>
+            <td> {{ $post->type }} </td>
+            <td> {{ $post->price }} </td>
+            <td> {{ $post->count }} </td>
+            <td> {{ $post->description }} </td>
+            <td> {{ $post->file }} </td>
 
         </tr>
     @endforeach
-
 </table>
     </div>
 
