@@ -46,4 +46,4 @@ Route::post('image/upload/store','proController@add')->name('uploadDropzonePost'
 //Route::post('image/upload/store','ImageUploadController@fileStore')->name('uploadDropzonePost');
 //Route::post('image/delete','ImageUploadController@fileDestroy');
 //fileStore
-Route::get('/r','proController@index');
+Route::get('/result','proController@index');
