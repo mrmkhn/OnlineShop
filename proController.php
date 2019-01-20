@@ -24,13 +24,13 @@ class proController extends BaseController
         $description = $r->input('description');
         $cover = $r->file('file');
           $path =Storage::disk('public')->put('/images',$cover);
-      $data=  array(
+      $t=  array(
             'name' => $r->name, 'type' => $r->type,
             'price' => $r->price, 'count' => $r->count,
             'description' => $r->description ,
             'file'=>$path);
          DB::table('product')->insert($t);
-///return view('RetrieveDB');
+return view('result');
 
 
     }
@@ -50,8 +50,21 @@ class proController extends BaseController
     }
     public function index()
     {
-      $data=\DB::table('product')->get();
-          return view('retrieveDB',compact('data'));
+      //  $product=proController::all()->ToArray();
+
+     //   return view('proController.index',compact('product'));
+
+
+    //  if(count($t)>0)
+  //    {
+        $t=\DB::table('product')->get();
+          return view('retrieveDB',compact('t'));
+   //   }
+
+   //      else{ echo "no";}
+
+
+        //$data['data'];
     }
 }
 
