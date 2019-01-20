@@ -50,21 +50,8 @@ class proController extends BaseController
     }
     public function index()
     {
-      //  $product=proController::all()->ToArray();
-
-     //   return view('proController.index',compact('product'));
-
-        $data['data']=DB::table('product')->get();
-      if(count($t)>0)
-      {
-
+      $data=\DB::table('product')->get();
           return view('retrieveDB',compact('data'));
-      }
-
-         else{ echo "no";}
-
-
-        //;
     }
 }
 
